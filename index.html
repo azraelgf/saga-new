@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="ru">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Верстка «saga»</title>
+</head>
+
+<body>
+	<div class="rootpage">
+
+		<div class="rootpage__pages">
+			<h1>Верстка «saga»</h1>
+			<div class="rootpage__info">
+				Особенности проекта
+			</div>
+			<h2>Готовые страницы:</h2>
+			<ol class="rootpage__list">
+				<li><a target="_blank" href="home.html">Главная</a></li>
+				<li><a target="_blank" href="product-single.html">Карточка решения</a></li>
+				<li><a target="_blank" href="maps-clubs.html">Компьютерные клубы</a></li>
+				<li><a target="_blank" href="club-single-city.html">Компьютерные клубы в МосквЕ</a></li>
+				<li><a target="_blank" href="club-single.html">Название клуба</a></li>
+				<li><a target="_blank" href="ready-solution.html">Готовые решения</a></li>
+				<li><a target="_blank" href="accessories.html">АКСЕССУАРЫ И ПЕРИФЕРИЯ</a></li>
+				<li><a target="_blank" href="accessories-catalog.html">Игровые мониторы</a></li>
+				<li><a target="_blank" href="accessories-category-single.html">LG UltraGear 24GN65R(product-category single )</a></li>
+				<li><a target="_blank" href="delivery.html">Доставка</a></li>
+				<li><a target="_blank" href="credit.html">Кредит</a></li>
+				<li><a target="_blank" href="pay.html">Оплата</a></li>
+				<li><a target="_blank" href="guarantee.html">Гарантия</a></li>
+				<li><a target="_blank" href="contacts.html">Контакты</a></li>
+				<li><a target="_blank" href="reviews.html">ОТзывы</a></li>
+				<li><a target="_blank" href="cases.html">Примеры наших работ</a></li>
+				<li><a target="_blank" href="cases-single.html">Как мы оборудовали клуб</a></li>
+				<li><a target="_blank" href="help.html">Помощь в подборе</a></li>
+				<li><a target="_blank" href="configurator.html">Конфигуратор мощных игровых пк</a></li>
+				<li><a target="_blank" href="not-found.html">404</a></li>
+				<li><a target="_blank" href="privacy.html">Полтитика конфиденциальности</a></li>
+			</ol>
+			<h2 hidden="hidden">Popups:</h2>
+			<ol hidden="hidden" class="rootpage__list">
+				<li><a target="_blank" href="index.html#"></a></li>
+			</ol>
+		</div>
+	</div>
+</body>
+<style>
+	@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
+
+	*,
+	*::before,
+	*::after {
+		padding: 0;
+		margin: 0;
+		border: 0;
+		box-sizing: border-box;
+	}
+
+	html,
+	body {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		min-width: 320px;
+		width: 100%;
+		color: #fff;
+		background: linear-gradient(135deg, #e8f0f2, #d1e8e4);
+	}
+
+	use {
+		text-transform: uppercase;
+		fill: none;
+		stroke-width: 4;
+		letter-spacing: 4px;
+		font: 100px Open Sans, Impact;
+		-webkit-animation: dash 10s linear infinite;
+		animation: dash 10s linear infinite;
+	}
+
+	@-webkit-keyframes dash {
+		from {
+			stroke-dashoffset: -100%;
+		}
+
+		to {
+			stroke-dashoffset: 0%;
+		}
+	}
+
+	@keyframes dash {
+		from {
+			stroke-dashoffset: -100%;
+		}
+
+		to {
+			stroke-dashoffset: 0%;
+		}
+	}
+
+	body {
+		font-family: Montserrat, sans-serif;
+		line-height: 1;
+		font-size: 1rem;
+	}
+
+	a {
+		text-decoration: underline;
+		color: #071727;
+	}
+
+	a:visited {
+		text-decoration: underline;
+		color: #9f9e9e;
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+
+	ul li {
+		list-style: none;
+	}
+
+	img {
+		vertical-align: top;
+	}
+
+	.rootpage__info {
+		color: #071727;
+	}
+
+	.rootpage {
+		padding: 30px;
+		position: relative;
+		min-height: 100%;
+	}
+
+	.rootpage__pages {
+		flex: 1 1 auto;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.rootpage__links {
+		display: grid;
+		gap: 30px;
+		justify-content: center;
+	}
+
+	.rootpage__links-box {
+		display: flex;
+		gap: 30px;
+	}
+
+	.social-img {
+		display: grid;
+		grid-template-columns: repeat(2, 260px);
+		align-items: center;
+		justify-content: center;
+		gap: 30px;
+	}
+
+	.social-img img {
+		width: 260px;
+		height: 300px;
+	}
+
+	ol,
+	ul {
+		color: #071727;
+	}
+
+	.social-img p {
+		text-align: center;
+		font-size: .8rem;
+		opacity: .4;
+	}
+
+	h1 {
+		color: #071727;
+		;
+		font-size: 3em;
+		text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.6);
+		margin: 0 0 1.25rem 0;
+	}
+
+	h2 {
+		color: #071727;
+		;
+		font-size: 2em;
+		text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.6);
+		margin: 0 0 1rem 0;
+	}
+
+	.rootpage__info {
+		line-height: 140%;
+		margin: 0 0 1.5rem 0;
+	}
+
+	.rootpage__list {
+		margin: 0 0 2.25rem 1.25rem;
+	}
+
+	.rootpage__list li:not(:last-child) {
+		margin: 0 0 15px 0;
+	}
+
+	.rootpage__contacts,
+	.rootpage__tnx {
+		padding: 20px 65px;
+		line-height: 140%;
+		max-width: 600px;
+	}
+
+
+	.rootpage__contacts {
+		position: relative;
+	}
+
+	.rootpage__tnx:after,
+	.rootpage__contacts:after {
+		position: absolute;
+		filter: blur(.5rem);
+		opacity: .8;
+		content: '';
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	.rootpage__contacts:after {
+		background: #2d3fc2;
+	}
+
+	.rootpage__contacts a {
+		color: #fff100;
+	}
+
+	.rootpage__tnx {
+		position: relative;
+	}
+
+	.rootpage__tnx:after {
+		background: #065c08;
+	}
+
+	h2,
+	p {
+		position: relative;
+		z-index: 2;
+	}
+
+	@media (min-width: 767px) {
+		.social-img p {
+			grid-column: span 2;
+		}
+	}
+
+	@media (max-width: 767px) {
+		.rootpage {
+			padding: 30px 15px;
+		}
+
+		h1 {
+			font-size: 1.85rem;
+			margin: 0 0 1.25rem 0;
+		}
+
+		h2 {
+			font-size: 1.125rem;
+			margin: 0 0 1rem 0;
+		}
+
+		.rootpage__contacts,
+		.rootpage__tnx {
+			padding: 20px;
+		}
+
+		.rootpage__links-box {
+			flex-wrap: wrap;
+			justify-content: center;
+			text-align: center;
+		}
+
+		.social-img {
+			justify-items: center;
+			grid-template-columns: 1fr;
+		}
+	}
+
+	@media (max-width: 480px) {
+
+		.rootpage__tnx,
+		.rootpage__contacts {
+			width: 100%;
+			padding: 20px;
+			font-size: 14px;
+		}
+
+		h2 {
+			margin-bottom: .55rem;
+		}
+
+		.rootpage__tnx,
+		.rootpage__contacts {
+			text-align: center;
+		}
+
+		.social-img img {
+			width: 100%;
+			height: auto;
+		}
+	}
+</style>
+
+</html>
